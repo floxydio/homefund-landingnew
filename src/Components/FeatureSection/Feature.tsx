@@ -11,10 +11,10 @@ export default function Feature() {
                     </div>
                 </div>
                 {/* container */}
-                <div className="flex justify-center">
+                <div className="flex justify-center place-items-center">
                     <div className="justify-center">
                         {/* row */}
-                        <div className="justify-center flex flex-warp">
+                        <div className="flex flex-warp">
                             <div className="flex flex-wrap justify-between gap-x-[30px]">
                                 {/* feature item */}
                                 <div className="mt-[64px]">
