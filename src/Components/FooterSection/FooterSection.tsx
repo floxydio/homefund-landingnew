@@ -1,4 +1,28 @@
+'use client'
+import React from "react"
+import Modal from 'react-modal'
+
 export default function Footer() {
+    const year = new Date()
+    const customStyle = {
+        content: {
+
+        },
+        overlay: {
+            background: '#0000005B'
+
+        }
+    }
+
+    const [modalIsOpen, setIsOpen] = React.useState(false)
+
+    function openModal() {
+        setIsOpen(true)
+    }
+
+    function closeModal() {
+        setIsOpen(false)
+    }
     return (
         <>
             <div className="gap-8 py-10 px-5 md:py-16 md:px-28 sm:py-10 sm:px-5 bg-black flex flex-wrap place-content-between">
@@ -17,9 +41,36 @@ export default function Footer() {
                         </defs>
                     </svg>
                     <div className="grid gap-3">
-                        <div className="text-white flex gap-6">
-                            <p className="hover:cursor-pointer hover:text-blue-400">Download Now</p>
-                            <p className="hover:cursor-pointer  hover:text-blue-400">License</p>
+                        <div className="text-white flex gap-8">
+                            <a href="#" onClick={openModal}>
+                                <p className="hover:cursor-pointer hover:text-blue-400">Syarat & Ketentuan</p></a>
+                            <div className="flex justify-center items-center ">
+                                <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={{
+                                    content: {
+                                        width: '50%',
+                                        marginLeft: 'auto',
+                                        marginRight: 'auto',
+                                        marginTop: 30,
+                                    },
+                                    overlay: {
+                                        background: '#0000005B',
+                                    }
+                                }} className={" bg-white rounded-lg"}>
+                                    <h2 className=" font-semibold text-xl sticky top-0 bg-white p-3 text-gray-700">Syarat & Ketentuan</h2>
+                                    <div className="grid gap-4 text-[#666666] p-3 text-sm">
+                                        <p>Situs Web ini dimiliki dan dikelola oleh PT. IoTechnology, sebuah plaltform peer to peer landing yang mempertemukan antara Developer dengan para Investor untuk bekerjasama dalam membuat kawasan perumahan. Bacalah ketentuan-ketentuan penggunaan situs ini dengan cermat dan teliti sebelum Anda mulai menggunakan situs dan layanan kami. Dengan mengakses dan/atau menggunakan situs dan layanan kami, anda menyatakan bahwa Anda telah membaca dan menyetujui untuk terikat secara hukum oleh Ketentuan-ketentuan penggunaan situs web kami.</p>
+
+                                        <p>Situs Web ini memungkinkan para penggunanya untuk mengakses berbagai materi dan informasi pilihan investasi dalam bidang properti secara online. Materi ini dapat berupa surat perjanjian keanggotaan dan informasi lainnya terkait dengan produk dan layanan investasi yang ditawarkan oleh HomeFunding.id. Situs Web ini juga berisi teks, gambar, grafik, logo, dan informasi lainnya (yang secara umum dikenal sebagai Konten).
+                                        </p>
+
+                                        <p>Mohon untuk diperhatikan, ketika Anda mengakses dan menggunakan Situs Web ini, Anda tunduk kepada Persyaratan berikut serta semua hukum dan peraturan yang berlaku. Silahkan baca persyaratan ini dengan seksama. Jika Anda tidak menerima dan setuju untuk terikat oleh syarat atau ketentuan berikut, Anda tidak diizinkan untuk mengakses atau menggunakan Situs Web, Layanan atau Konten dalam Situs Web ini. Namun jika Anda mengakses dan menggunakan Situs Web berarti Anda telah menerima dan setuju untuk patuh terhadap setiap persyaratan dan ketentuan yang ditetapkan dibawah ini.</p>
+                                    </div>
+                                    <div className="border-t-2 font-semibold text-[18px] sticky bottom-0 bg-white p-3 text-white text-base flex justify-end">
+                                        <button className="bg-cyan-600 px-9 rounded-sm py-1" onClick={closeModal}>Tutup</button>
+                                    </div>
+                                </Modal>
+                            </div>
+                            <p className="hover:cursor-pointer  hover:text-blue-400">Kebijakan Privasi</p>
 
                         </div>
                         <div className="text-white flex gap-3 flex-wrap">
@@ -29,10 +80,12 @@ export default function Footer() {
                             <div className="hover:cursor-pointer  hover:text-blue-400">News</div>
                             <div className="hover:cursor-pointer  hover:text-blue-400">Help</div>
                             <div className="hover:cursor-pointer  hover:text-blue-400">Contact</div>
+                            <div className="hover:cursor-pointer  hover:text-blue-400">FAQ</div>
+                            <div className="hover:cursor-pointer  hover:text-blue-400">Carrier</div>
                         </div>
 
                     </div>
-                    <p className="text-sm text-[#D1D5DB]">© 2021 Landify UI Kit. All rights reserved</p>
+                    <p className="text-sm text-[#D1D5DB]">© Copyright {year.getFullYear()} PT. DIO RUMAH DIGITAL, All rights reserved</p>
 
                 </div>
 
