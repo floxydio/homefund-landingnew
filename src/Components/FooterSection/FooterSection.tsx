@@ -9,7 +9,7 @@ export default function Footer() {
 
         },
         overlay: {
-            background: '#0000005B'
+            background: '#000000A9'
 
         }
     }
@@ -17,29 +17,20 @@ export default function Footer() {
     const [modalIsOpen, setIsOpen] = React.useState(false)
 
     function openModal() {
+        document.body.style.overflow = 'hidden';
+        window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
         setIsOpen(true)
     }
 
     function closeModal() {
+        document.body.style.overflow = 'scroll'
         setIsOpen(false)
     }
     return (
         <>
             <div className="gap-8 py-10 px-5 md:py-16 md:px-28 sm:py-10 sm:px-5 bg-black flex flex-wrap place-content-between">
                 <div className="grid gap-6">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Logo" clip-path="url(#clip0_95_895)">
-                            <path id="Rectangle 587" d="M0.657471 32H11.5068C16.6514 32 20.8219 27.8295 20.8219 22.6849H9.97254C4.82797 22.6849 0.657471 26.8554 0.657471 32Z" fill="#F22BB2" />
-                            <path id="Rectangle 591" d="M1.14282 9.31507V23.0137C6.28739 23.0137 10.4579 18.8432 10.4579 13.6986V0C5.31332 0 1.14282 4.1705 1.14282 9.31507Z" fill="#8C30F5" />
-                            <path id="Rectangle 587_2" d="M31.3424 0H20.493C15.3485 0 11.178 4.1705 11.178 9.31507H22.0273C27.1719 9.31507 31.3424 5.14457 31.3424 0Z" fill="#FE9A22" />
-                            <path id="Rectangle 591_2" d="M31.3424 22.137V8.43835C26.1978 8.43835 22.0273 12.6089 22.0273 17.7534V31.4521C27.1719 31.4521 31.3424 27.2816 31.3424 22.137Z" fill="#2EC5CE" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_95_895">
-                                <rect width="32" height="32" fill="white" />
-                            </clipPath>
-                        </defs>
-                    </svg>
+                    <img src="/Logo.png" placeholder="img_logo" />
                     <div className="grid gap-3">
                         <div className="text-white flex gap-8">
                             <a href="#" onClick={openModal}>
@@ -51,6 +42,8 @@ export default function Footer() {
                                         marginLeft: 'auto',
                                         marginRight: 'auto',
                                         marginTop: 30,
+                                        height: '80%',
+                                        overflow: 'scroll'
                                     },
                                     overlay: {
                                         background: '#0000005B',
@@ -58,22 +51,346 @@ export default function Footer() {
                                 }} className={" bg-white rounded-lg"}>
                                     <h2 className=" font-semibold text-xl sticky top-0 bg-white p-3 text-gray-700">Syarat & Ketentuan</h2>
                                     <div className="grid gap-4 text-[#666666] p-3 text-sm">
-                                        <p>Situs Web ini dimiliki dan dikelola oleh PT. IoTechnology, sebuah plaltform peer to peer landing yang mempertemukan antara Developer dengan para Investor untuk bekerjasama dalam membuat kawasan perumahan. Bacalah ketentuan-ketentuan penggunaan situs ini dengan cermat dan teliti sebelum Anda mulai menggunakan situs dan layanan kami. Dengan mengakses dan/atau menggunakan situs dan layanan kami, anda menyatakan bahwa Anda telah membaca dan menyetujui untuk terikat secara hukum oleh Ketentuan-ketentuan penggunaan situs web kami.</p>
+                                        <>
+                                            <h5>Syarat &amp; Ketentuan Penggunaan</h5>
+                                            <p>
+                                                Situs Web ini dimiliki dan dikelola oleh{" "}
+                                                <span style={{ fontWeight: 600 }}>PT DIO RUMAH DIGITAL</span>, sebuah platform
+                                                peer to peer landing yang mempertemukan antara Developer dengan para
+                                                Investor untuk bekerjasama dalam membuat kawasan perumahan. Bacalah
+                                                ketentuan-ketentuan penggunaan situs ini dengan cermat dan teliti sebelum
+                                                Anda mulai menggunakan situs dan layanan kami. Dengan mengakses dan/atau
+                                                menggunakan situs dan layanan kami, anda menyatakan bahwa Anda telah membaca
+                                                dan menyetujui untuk terikat secara hukum oleh Ketentuan-ketentuan
+                                                penggunaan situs web kami.
+                                            </p>
+                                            <p style={{ marginTop: 20 }}>
+                                                Situs Web ini memungkinkan para penggunanya untuk mengakses berbagai materi
+                                                dan informasi pilihan investasi dalam bidang properti secara online. Materi
+                                                ini dapat berupa surat perjanjian keanggotaan dan informasi lainnya terkait
+                                                dengan produk dan layanan investasi yang ditawarkan oleh{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span>. Situs Web ini juga
+                                                berisi teks, gambar, grafik, logo, dan informasi lainnya (yang secara umum
+                                                dikenal sebagai Konten).
+                                            </p>
+                                            <p style={{ marginTop: 20 }}>
+                                                Mohon untuk diperhatikan, ketika Anda mengakses dan menggunakan Situs Web
+                                                ini, Anda tunduk kepada Persyaratan berikut serta semua hukum dan peraturan
+                                                yang berlaku. Silahkan baca persyaratan ini dengan seksama. Jika Anda tidak
+                                                menerima dan setuju untuk terikat oleh syarat atau ketentuan berikut, Anda
+                                                tidak diizinkan untuk mengakses atau menggunakan Situs Web, Layanan atau
+                                                Konten dalam Situs Web ini. Namun jika Anda mengakses dan menggunakan Situs
+                                                Web berarti Anda telah menerima dan setuju untuk patuh terhadap setiap
+                                                persyaratan dan ketentuan yang ditetapkan dibawah ini.
+                                            </p>
+                                            <h5>Persetujuan</h5>
+                                            <p>
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> berhak untuk
+                                                mengubah, memodifikasi, menunda atau menghentikan semua atau setiap bagian
+                                                dari situs atau Layanan setiap saat.{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> juga dapat
+                                                menentukan batas pada fitur-fitur tertentu atau membatasi akses Anda ke
+                                                bagian atau seluruh situs atau Layanan tanpa pemberitahuan atau tanggung
+                                                jawab.
+                                            </p>
+                                            <p>
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> dapat dari waktu ke
+                                                waktu memodifikasikan atau mengubah Ketentuan-Ketentuan Penggunaan ini
+                                                dengan memposting perubahan Ketentuan Penggunaan pada situs ini. Setiap
+                                                penggunaan situs atau Layanan setelah perubahan Ketentuan Penggunaan ini
+                                                akan dianggap sebagai penerimaan atas perubahan Ketentuan Penggunaan oleh
+                                                Anda. Jika Anda tidak setuju pada perubahan Ketentuan Penggunaan, Anda
+                                                memiliki hak untuk menutup akun dan/atau berhenti menggunakan situs dan
+                                                Layanan. Periksa halaman ini dari waktu ke waktu karena perubahan, variasi
+                                                dan koreksi terhadap Ketentuan Penggunaan akan mengikat Anda.
+                                            </p>
+                                            <p>
+                                                Setiap orang dilarang untuk menggunakan materi dan informasi yang terdapat
+                                                dalam Situs Web ini di dalam negara atau yurisdiksi dimana penggunaan
+                                                tersebut dianggap melanggar hukum. Jika Anda melanggar hukum maka Anda tidak
+                                                diizinkan untuk mengakses atau menggunakan informasi apa pun di dalam Web
+                                                ini.
+                                            </p>
+                                            <h5>Kepemilikan dan Pembatasan-Pembatasan Hak Cipta</h5>
+                                            <p>
+                                                Semua Konten dan Perangkat Lunak yang terdapat dalam Situs Web ini adalah
+                                                karya yang mengandung hak cipta milik{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> dan dilindungi oleh
+                                                Undang-Undang Hak Cipta. Kompilasi dari semua konten dan perangkat lunak
+                                                yang merupakan hak ekslusif dari HomeFunding dilindungi oleh Undang-Undang
+                                                Hak Cipta. Anda dapat mengunduh informasi dari Situs Web ini dan mencetaknya
+                                                untuk digunakan secara pribadi dengan syarat Anda tetap menjaga keutuhannya
+                                                dan tidak menghapus atau mengubah hak cipta atau pemberitahuan lain yang
+                                                terkandung dalam informasi tersebut.
+                                            </p>
+                                            <p>
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> dengan ini
+                                                memberikan Anda izin terbatas untuk mengakses dan menggunakan secara pribadi
+                                                Situs Web ini tetapi Anda tidak diizinkan untuk mengunduh atau memodifikasi
+                                                seluruh atau sebagian dari Situs Web kecuali dengan persetujuan tertulis
+                                                dari <span style={{ fontWeight: 600 }}>HomeFunding</span> Seluruh atau
+                                                sebagian dari Situs Web ini tidak boleh direproduksi, diduplikasi, disalin,
+                                                dijual, dijual kembali, dikunjungi, atau dimanfaatkan untuk tujuan komersial
+                                                tanpa persetujuan tertulis dari{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span>. Anda tidak
+                                                diperkenankan mem-frame atau menggunakan teknik framing untuk menyertakan
+                                                setiap merek dagang, logo, atau informasi berpemilik lainnya (termasuk
+                                                gambar, teks, tata letak halaman, atau bentuk) yang menjadi milik{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> dan afiliasinya
+                                                tanpa persetujuan tertulis yang jelas. Anda tidak diperkenankan menggunakan
+                                                “meta-tag” atau “teks tersembunyi” lainnya yang menggunakan nama atau merek
+                                                jasa apapun tanpa persetujuan tertulis dari{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> Setiap penggunaan
+                                                yang tidak diperkenankan akan mengakhiri persetujuan atau izin yang
+                                                diberikan oleh <span style={{ fontWeight: 600 }}>HomeFunding.</span>
+                                            </p>
+                                            <p>
+                                                Informasi yang disampaikan melalui Situs Web ini. Kecuali data-data pribadi
+                                                atau informasi yang Anda berikan, setiap informasi yang Anda kirimkan kepada
+                                                HomeFunding melalui Situs Web ini, apakah dimasukkan secara langsung,
+                                                diberikan melalui surat elektronik atau lainnya, termasuk data, pertanyaan,
+                                                komentar, atau saran, akan diperlakukan sebagai hal yang bukan rahasia dan
+                                                tidak berpemilik dan akan menjadi milik dari{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> Informasi tersebut
+                                                dapat digunakan untuk tujuan apapun, termasuk namun tidak terbatas pada
+                                                reproduksi, penawaran, pengungkapan, pengiriman, penerbitan, penyiaran, dan
+                                                posting. <span style={{ fontWeight: 600 }}>HomeFunding</span> bebas
+                                                menggunakan setiap gagasan, konsep, pengetahuan, atau teknik yang terkandung
+                                                dalam setiap komunikasi yang Anda kirimkan kepada{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> melalui Situs Web
+                                                ini atau dengan cara lain untuk tujuan apapun, termasuk, namun tidak
+                                                terbatas pada, mengembangkan dan memasarkan produk-produk menggunakan
+                                                informasi tersebut.
+                                            </p>
+                                            <h5>Penggunaan Yang Dilarang</h5>
+                                            <p>
+                                                Hal-hal berikut adalah dilarang bagi setiap penggunaan atau percobaan
+                                                penggunaan dari Situs Web ini yaitu:
+                                            </p>
+                                            <p>
+                                                1. Untuk tujuan-tujuan yang melanggar hukum, tidak berizin, menipu atau
+                                                maksud-maksud jahat lainnya.
+                                            </p>
+                                            <p>
+                                                2. Yang dapat merusak, melumpuhkan, membebani, atau merusak server apapun,
+                                                atau jaringan yang terhubung ke server apapun.
+                                            </p>
+                                            <p>
+                                                3. Untuk mengganggu penggunaan pihak lain dan kepuasan yang didapat dari
+                                                menggunakan Situs Web ini.
+                                            </p>
+                                            <p>
+                                                4. Untuk mendapatkan akses yang tidak berizin ke akun, sistem komputer atau
+                                                jaringan lain apapun yang terhubung ke server atau sistem melalui peretasan,
+                                                pencurian password atau cara lainnya.
+                                            </p>
+                                            <p>
+                                                5. Untuk mengakses sistem, data atau informasi yang oleh Pemilik tidak
+                                                dimaksudkan untuk diakses oleh pengguna.
+                                            </p>
+                                            <p>
+                                                6. Untuk mendapatkan materi atau informasi apapun dengan cara apapun yang
+                                                oleh Pemilik tidak dimaksudkan untuk diberikan, atau untuk penggunaan
+                                                lainnya selain untuk kepentingan usaha yang menjadi maksud diadakannya Situs
+                                                Web ini.
+                                            </p>
+                                            <p>
+                                                Selain itu, sehubungan dengan penggunaan Anda atas Situs ini, Anda setuju
+                                                untuk tidak:
+                                            </p>
+                                            <p>
+                                                1. Mengunggah atau mengirimkan pesan, informasi, data, teks, perangkat lunak
+                                                atau gambar, atau konten lain (“Materi”) yang melanggar hukum, membahayakan,
+                                                mengancam, merugikan, melecehkan, menyakiti, mencemarkan nama baik, kasar,
+                                                cabul, memfitnah, atau hal-hal lain yang tidak diterima, atau yang mungkin
+                                                melanggar hak orang lain akan privasi atau publisitas;
+                                            </p>
+                                            <p>
+                                                2. Membuat identitas palsu dengan maksud untuk menyesatkan orang lain atau
+                                                berkedok sebagai orang atau kelompok, termasuk namun tidak terbatas pada
+                                                orang yang mewakili Chubb Group, atau secara tidak benar menyatakan atau
+                                                menggambarkan diri Anda memiliki afiliasi dengan seseorang atau entitas
+                                                tertentu;
+                                            </p>
+                                            <p>
+                                                3. Mengunggah atau mengirimkan Materi yang bukan menjadi hak Anda untuk
+                                                direproduksi, ditampilkan atau dikirimkan berdasarkan Undang-Undang atau
+                                                ikatan kontrak atau hubungan fidusiari (misalnya persetujuan untuk menjaga
+                                                kerahasiaan);
+                                            </p>
+                                            <p>
+                                                4. Mengunggah atau memasukkan file-file yang berisi virus, Trojan horse,
+                                                worm, bom waktu, cancel-bot, file yang korup, atau perangkat lunak atau
+                                                program serupa lain yang dapat merusak pengoperasian komputer atau barang
+                                                milik orang lain;
+                                            </p>
+                                            <p>
+                                                5. Menghapus atribusi terhadap pengarang, pemberitahuan hukum atau hal-hal
+                                                yang berpemilik atau label yang Anda unggah ke bentuk komunikasi apapun;
+                                            </p>
+                                            <p>
+                                                6. Menggunakan fitur komunikasi Situs Web ini dengan cara yang memberikan
+                                                dampak negatif terhadap ketersediaan sumber dayanya bagi pengguna lain
+                                                (misalnya, shouting berlebihan, menggunakan huruf besar, atau terus menerus
+                                                membanjirinya dengan posting dan teks berulang);
+                                            </p>
+                                            <p>
+                                                7. Mengunggah atau mengirimkan segala bentuk iklan yang tidak diminta,
+                                                materi promosi, “junk mail,” “spam,” “surat berantai,” “skema piramida” atau
+                                                segala bentuk penawaran lain, iklan komersial atau yang lainnya;
+                                            </p>
+                                            <p>
+                                                8. Melanggar hukum yang berlaku, baik itu hukum lokal, daerah, nasional
+                                                maupun internasional;
+                                            </p>
+                                            <p>
+                                                9. Mengunggah atau mengirimkan setiap Materi yang melanggar hak paten, merek
+                                                dagang, merek jasa, rahasia dagang, hak cipta atau hak kepemilikan lainnya
+                                                dari pihak manapun;
+                                            </p>
+                                            <p>
+                                                10. Menghapus atau merevisi setiap Materi yang diposting oleh setiap orang
+                                                atau entitas lain;
+                                            </p>
+                                            <p>
+                                                11. Memanipulasi atau menampilkan Situs Web ini dengan menggunakan teknik
+                                                framing, mirroring atau teknologi navigasi sejenis atau membuat link
+                                                langsung ke bagian apapun dari Situs Web ini selain halaman utama,
+                                                HomeFunding, sesuai dengan izin terbatas dan akses terhadap Situs Web
+                                                seperti yang diuraikan di atas;
+                                            </p>
+                                            <p>
+                                                12. Mendaftarkan, melanggankan, mencoba untuk mendaftarkan, mencoba untuk
+                                                melanggankan, berhenti melanggankan, atau mencoba untuk berhenti
+                                                melanggankan, pihak manapun untuk Produk atau Layanan apapun jika Anda tidak
+                                                mendapat izin secara jelas dari pihak tersebut untuk melakukannya, atau
+                                            </p>
+                                            <p>
+                                                13. Mengambil atau mengumpulkan informasi tentang orang lain, termasuk
+                                                alamat-alamat e-mail.
+                                            </p>
+                                            <p>
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> berhak untuk
+                                                mengambil tindakan hukum apa pun yang dianggap perlu terhadap pelanggaran
+                                                atau dugaan pelanggaran terhadap hal-hal yang telah disebutkan di atas,
+                                                termasuk menghentikan akses dan/atau akun pengguna.{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> dapat bekerja sama
+                                                dengan penegak hukum dan/atau pihak ketiga dalam penyelidikan terhadap
+                                                sangkaan atau dugaan kejahatan pidana maupun perdata.{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span> setiap saat berhak
+                                                untuk mengungkap informasi apapun yang dianggap perlu untuk memenuhi
+                                                letaatan terhadap hukum yang berlaku, peraturan, proses hukum atau
+                                                permintaan pemerintah, atau untuk mengedit, menolak untuk memposting atau
+                                                menghapus informasi atau materi apapun, baik sebagian maupun keseluruhan,
+                                                sesuai dengan kebijakan yang diambil oleh{" "}
+                                                <span style={{ fontWeight: 600 }}>HomeFunding</span>
+                                            </p>
+                                            <h5>Layanan Interaktif</h5>
+                                            <p>
+                                                1. Kami dapat dari waktu ke waktu menyediakan layanan-layanan berikut di
+                                                situs, Konten situs, Layanan kami, termasuk, tetapi tidak terbatas pada:
+                                                <br />
+                                                a. Chat room;
+                                                <br />
+                                                b. Fungsi-fungsi media sosial lain;
+                                            </p>
+                                            <p>
+                                                2. Apabila kami menyediakan setiap Layanan Interaktif, kami akan menyediakan
+                                                informasi yang jelas kepada Anda tentang jenis layanan yang ditawarkan, jika
+                                                untuk layanan ada moderatornya, dan bentuk moderasi apa yang digunakan
+                                                (termasuk apakah dilakukan oleh manusia atau lainnya).
+                                            </p>
+                                            <p>
+                                                3. Kami akan melakukan upaya-upaya yang wajar secara komersial untuk menilai
+                                                setiap potensi risiko terhadap Para Pengguna dari para pihak ketiga ketika
+                                                mereka menggunakan setiap Layanan Interaktif yang disediakan di situs kami,
+                                                dan kami akan memutuskan dalam setiap hal apakah tepat untuk menggunakan
+                                                moderasi dari layanan yang relevan tersebut (termasuk jenis moderasi yang
+                                                digunakan) dalam menangani risiko-risiko tersebut. Namun, kami tidak
+                                                berkewajiban untuk mengawasi, memantau atau memoderasi setiap Layanan
+                                                Interaktif yang kami sediakan di situs kami, dan kami dengan tegas
+                                                mengecualikan kewajiban kami atas setiap kerugian yang timbul dari
+                                                penggunaan Layanan Interaktif oleh Pengguna yang bertentangan dengan standar
+                                                konten, terlepas apakah layanan itu dimoderasi atau tidak.
+                                            </p>
+                                            <p>
+                                                4. Jika kami memoderasi Layanan Interaktif, kami biasanya akan menyediakan
+                                                sarana untuk menghubungi moderator, apabila muncul masalah atau kesulitan.
+                                            </p>
+                                            <p>
+                                                5. Anda bertanggung jawab secara mutlak atas interaksi Anda dengan Para
+                                                Pengguna lain. Kami melindungi hak, tetapi tidak berkewajiban, untuk
+                                                memantau sengketa antara Anda dan Para Pengguna lain.
+                                            </p>
+                                            <h5>Keamanan dan Pengendalian</h5>
+                                            <p>
+                                                Sebagai transparasi ke investor, HomeFunding akan mengacu pada peraturan OJK
+                                                untuk perlindungan dana investor, HomeFunding akan memberlakukan otomatis
+                                                withdraw saldo mengendap ke akun bank masing-masing investor yang terdaftar
+                                                pada H+2 selesainya proyek apabila saldo tidak digunakan untuk mendanai
+                                                proyek lainnya.
+                                            </p>
+                                            <p>
+                                                Anda harus melengkapi proses pendaftaran dengan memberikan informasi Anda
+                                                yang terbaru, lengkap, dan akurat sebagaimana yang diminta di dalam form
+                                                pendaftaran tersebut, dan menentukan password dan nama pengguna. Anda
+                                                sepenuhnya bertanggung jawab untuk menjaga kerahasiaan password dan akun dan
+                                                untuk menjaga semua aktivitas yang terjadi di dalam akun Anda. Dengan ini
+                                                Anda juga setuju untuk :
+                                            </p>
+                                            <p>
+                                                a. Secepatnya memberitahu Pemilik jika akun Anda digunakan tanpa seizing
+                                                Anda atau jika Anda mengetahui adanya pelanggaran terhadap keamanan.
+                                                <br />
+                                                b. Benar-benar keluar dari akun di akhir setiap sesi online.
+                                                HomeFundingtidak akan bertanggung jawab atas kerugian yang mungkin timbul
+                                                sebagai akibat dari password atau akun Anda digunakan oleh orang lain.
+                                            </p>
+                                            <p>
+                                                Ketika Anda mengunjungi Situs Web ini atau mengirimkan e-mail kepada kami,
+                                                Anda telah berkomunikasi dengan kami secara elektronik. Anda setuju untuk
+                                                menerima komunikasi dari kami secara elektronik. Kami akan berkomunikasi
+                                                dengan Anda melalui e-mail atau dengan memasang pemberitahuan di situs ini.
+                                                Anda setuju bahwa semua perjanjian, pemberitahuan, pengungkapan dan
+                                                komunikasi lain yang kami sediakan kepada Anda secara elektronik memenuhi
+                                                segala persyaratan hukum seperti halnya komunikasi yang dilakukan secara
+                                                tertulis.
+                                            </p>
+                                            <h5>Dokumen Lainnya yang Berlaku</h5>
+                                            <p>
+                                                1. Selain ketentuan-ketentuan pengguna ini, hal yang juga berlaku terhadap
+                                                para pengguna Situs ini adalah:
+                                            </p>
+                                            <p>
+                                                a. Kebijakan Privasi, yang menetapkan ketentuan-ketentuan yang berlaku
+                                                ketika kami mengola data pribadi Anda yang Anda berikan kepada kami.
+                                                <br />
+                                                b. Dengan menggunakan situs kami, Anda telah setuju dengan pengumpulan,
+                                                penggunaan, pengungkapan data pribadi Anda dan Anda menjamin bahwa data yang
+                                                diberikan adalah benar dan akurat.
+                                                <br />
+                                                c. Kebijakan Cookie, yang menetapkan informasi tentang cookie pada situs
+                                                kami. Perjanjian Keanggotaan, yang berlaku untuk penggunaan Anda atas
+                                                layanan sebagai pengguna terdaftar.
+                                            </p>
+                                            <p>
+                                                2. Jika terdapat pertentangan antara Ketentuan-Ketentuan Penggunaan ini dan
+                                                perjanjian lain yang berlaku untuk aspek-aspek khusus dari Layanan, yang
+                                                berlaku adalah perjanjian lain itu dalam kaitannya dengan aspek-aspek khusus
+                                                dari Layanan yang kepadanya perjanjian itu berlaku.
+                                            </p>
+                                        </>
 
-                                        <p>Situs Web ini memungkinkan para penggunanya untuk mengakses berbagai materi dan informasi pilihan investasi dalam bidang properti secara online. Materi ini dapat berupa surat perjanjian keanggotaan dan informasi lainnya terkait dengan produk dan layanan investasi yang ditawarkan oleh HomeFunding.id. Situs Web ini juga berisi teks, gambar, grafik, logo, dan informasi lainnya (yang secara umum dikenal sebagai Konten).
-                                        </p>
-
-                                        <p>Mohon untuk diperhatikan, ketika Anda mengakses dan menggunakan Situs Web ini, Anda tunduk kepada Persyaratan berikut serta semua hukum dan peraturan yang berlaku. Silahkan baca persyaratan ini dengan seksama. Jika Anda tidak menerima dan setuju untuk terikat oleh syarat atau ketentuan berikut, Anda tidak diizinkan untuk mengakses atau menggunakan Situs Web, Layanan atau Konten dalam Situs Web ini. Namun jika Anda mengakses dan menggunakan Situs Web berarti Anda telah menerima dan setuju untuk patuh terhadap setiap persyaratan dan ketentuan yang ditetapkan dibawah ini.</p>
                                     </div>
                                     <div className="border-t-2 font-semibold text-[18px] sticky bottom-0 bg-white p-3 text-white text-base flex justify-end">
-                                        <button className="bg-cyan-600 px-9 rounded-sm py-1" onClick={closeModal}>Tutup</button>
+                                        <button className="bg-[#4169E1] px-9 rounded-sm py-1" onClick={closeModal}>Tutup</button>
                                     </div>
                                 </Modal>
                             </div>
                             <p className="hover:cursor-pointer  hover:text-blue-400">Kebijakan Privasi</p>
 
                         </div>
-                        <div className="text-white flex gap-3 flex-wrap">
+                        {/* <div className="text-white flex gap-3 flex-wrap">
                             <div className="hover:cursor-pointer  hover:text-blue-400" >About</div>
                             <div className="hover:cursor-pointer  hover:text-blue-400">Feature</div>
                             <div className="hover:cursor-pointer  hover:text-blue-400">Pricing</div>
@@ -82,10 +399,10 @@ export default function Footer() {
                             <div className="hover:cursor-pointer  hover:text-blue-400">Contact</div>
                             <div className="hover:cursor-pointer  hover:text-blue-400">FAQ</div>
                             <div className="hover:cursor-pointer  hover:text-blue-400">Carrier</div>
-                        </div>
+                        </div> */}
 
                     </div>
-                    <p className="text-sm text-[#D1D5DB]">© Copyright {year.getFullYear()} PT. DIO RUMAH DIGITAL, All rights reserved</p>
+                    <p className="text-sm text-[#D1D5DB]">© Copyright {year.getFullYear()} PT DIO RUMAH DIGITAL - All rights reserved</p>
 
                 </div>
 

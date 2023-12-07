@@ -9,7 +9,7 @@ export default function Navbar() {
                         <h2 className="text-2xl font-extrabold pr-[32px]">HomeFunding</h2>
                         <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Fitur</span>
                         <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Product</span>
-                        <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Simulasi</span>
+
                         <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Blog</span>
                         <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Tentang Kami</span>
                     </div>
