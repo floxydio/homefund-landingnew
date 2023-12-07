@@ -1,8 +1,7 @@
 import Feature from "@/Components/FeatureSection/Feature";
 import Header from "@/Components/HeaderSection/Header.section";
-import Quotes from "@/Components/FooterSection/QuotesSection";
-import Simulasi from "@/Components/SimulasiSection/Simulasi.section";
 import Footer from "@/Components/FooterSection/FooterSection";
+import Simulasi from "@/Components/SimulasiSection/Simulasi.section";
 
 
 export default function Home() {
