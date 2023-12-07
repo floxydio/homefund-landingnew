@@ -5,6 +5,8 @@ export default function Section() {
         <>
             <div className="hidden lg:flex lg:mt-[30px] lg:h-[640px] flex-row justify-between">
                 <div className="div mt-[96px] w-[696px]">
+
+                    <p className="text-gray-500">Product Release 10 - 20 Januari 2024</p>
                     <span className="text-[60px] font-bold">
                         Belajar Investasi rumah, Makin Seru!
                     </span>
@@ -44,6 +46,7 @@ export default function Section() {
                 </div>
                 <img src="/vector.png" alt="mockup" height={640} className="mb-10" />
             </div>
+
 
         </>
     )

@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'HomeFunding - Investasi Terbaikmu',
   description: 'Find your best investasi',
+  icons: {
+    icon: '/Logo.png',
+  },
   keywords: ['HomeFunding', 'Investasi', 'Rumah', 'Properti', 'Saham', 'Murah', 'Jakarta', 'Indonesia', 'Depok']
 }
 
