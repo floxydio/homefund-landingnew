@@ -6,8 +6,8 @@ export default function Feature() {
                 {/* section heading */}
                 <div className="flex justify-center">
                     <div className="flex-row space-y-2 max-w-3xl ">
-                        <h1 className="text-3xl font-bold text-center text-[#111827]">Tailor-made features</h1>
-                        <p className="text-center text-[#111827] text-lg">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+                        <h1 className="text-3xl font-bold text-center text-[#111827]">Servis Andalan Kita</h1>
+                        <p className="text-center text-[#111827] text-lg">Untuk memberikan pengalaman investasi yang baik untuk pengguna yang ingin memulai investasi</p>
                     </div>
                 </div>
                 {/* container */}
@@ -36,9 +36,9 @@ export default function Feature() {
                                     {/* content  */}
                                     <div className="justify-center max-w-[352px] min-w-[303px]">
                                         <div className="text-[#111827]">
-                                            <h1 className="font-bold text-[30px] text-center ">Robust workflow</h1></div>
+                                            <h1 className="font-bold text-[30px] text-center ">Murah</h1></div>
                                         <div className="text-[#374151]  flex flex-row">
-                                            <p className="text-center text-[##374151]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p></div>
+                                            <p className="text-center text-[##374151]">Kami menyediakan modal infestasi mulai dari Rp.100.000 </p></div>
                                     </div>
                                 </div>
 
@@ -57,9 +57,9 @@ export default function Feature() {
                                     {/* content  */}
                                     <div className="justify-center max-w-[352px] min-w-[303px]">
                                         <div className="text-[#111827]">
-                                            <h1 className="font-bold text-[30px] text-center ">Flexibility</h1></div>
+                                            <h1 className="font-bold text-[30px] text-center ">Flexibilitas</h1></div>
                                         <div className="text-[#374151]  flex flex-row" >
-                                            <p className="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p></div>
+                                            <p className="text-center ">Dapat digunakan dimana saja, kapan saja Anda ingin investasi</p></div>
                                     </div>
                                 </div>
 
@@ -78,9 +78,9 @@ export default function Feature() {
                                     {/* content  */}
                                     <div className="justify-center max-w-[352px] min-w-[303px]">
                                         <div className="text-[#111827]">
-                                            <h1 className="font-bold text-[30px] text-center ">User friendly</h1></div>
+                                            <h1 className="font-bold text-[30px] text-center ">Bersahabat</h1></div>
                                         <div className="text-[#374151]  flex flex-row" >
-                                            <p className="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p></div>
+                                            <p className="text-center ">Tampilan yang mudah dipahami dan juga interface yang simple</p></div>
                                     </div>
                                 </div>
 
@@ -99,9 +99,9 @@ export default function Feature() {
                                     {/* content  */}
                                     <div className="justify-center max-w-[352px] min-w-[303px]">
                                         <div className="text-[#111827]">
-                                            <h1 className="font-bold text-[30px] text-center ">Multiple layouts</h1></div>
+                                            <h1 className="font-bold text-[30px] text-center ">Edukasi</h1></div>
                                         <div className="text-[#374151]  flex flex-row">
-                                            <p className="text-center text-[##374151]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p></div>
+                                            <p className="text-center text-[##374151]">Memberikan edukasi seputar dunia investasi untuk yang baru masuk ke dunia infestasi</p></div>
                                     </div>
                                 </div>
 
@@ -120,9 +120,9 @@ export default function Feature() {
                                     {/* content  */}
                                     <div className="justify-center max-w-[352px] min-w-[303px]">
                                         <div className="text-[#111827]">
-                                            <h1 className="font-bold text-[30px] text-center ">Better components</h1></div>
+                                            <h1 className="font-bold text-[30px] text-center ">Cepat</h1></div>
                                         <div className="text-[#374151]  flex flex-row" >
-                                            <p className="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p></div>
+                                            <p className="text-center ">Pembagian keuntungan yang cepat serta service yang siap membantu Anda 24/7</p></div>
                                     </div>
                                 </div>
 
@@ -141,9 +141,9 @@ export default function Feature() {
                                     {/* content  */}
                                     <div className="justify-center max-w-[352px] min-w-[303px]">
                                         <div className="text-[#111827]">
-                                            <h1 className="font-bold text-[30px] text-center ">Well organised</h1></div>
+                                            <h1 className="font-bold text-[30px] text-center ">Aman</h1></div>
                                         <div className="text-[#374151]  flex flex-row" >
-                                            <p className="text-center ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.</p></div>
+                                            <p className="text-center ">Tidak perlu khawatir akan uang hilang atau pun tertahan</p></div>
                                     </div>
                                 </div>
                             </div>
