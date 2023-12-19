@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FiAlignCenter, FiPlay } from "react-icons/fi";
 
 export default function Navbar() {
@@ -12,6 +13,7 @@ export default function Navbar() {
 
                         <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Blog</span>
                         <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Tentang Kami</span>
+                        <Link className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]" href="/career">Karir</Link>
                     </div>
                     <div className="right flex flex-row items-center h-full">
                         {/* Button daftar */}
