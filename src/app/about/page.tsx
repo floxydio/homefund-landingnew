@@ -1,19 +1,25 @@
 import Footer from '@/Components/FooterSection/FooterSection';
 import Navbar from '@/Components/HeaderSection/widget/Navbar';
 import Link from 'next/link';
+import backroundHeader from '../../../public/background_about.svg';
+import BackgroundImage from '@/Components/BackgroundImage/BackgroundImage';
+import Image from 'next/image';
 
 export default function Page() {
   return (
     <>
       <div className="lg:ml-[112px] lg:mr-[112px] lg:mt-[24px]  ml-[40px] mr-[40px] mt-[40px]">
-        <Navbar />
-        <h1 className="text-3xl text-center text-[#4169E1] font-sans ">
-          Yuk Kenalan
-        </h1>
-        <p className="text-[18px] mt-[10px] text-center font-sans">
-          Aplikasi investasi berbasis crowd funding untuk investasi rumah dan
-          bisnis untuk semua orang
-        </p>
+        {/* <Navbar /> */}
+        <div className="background-header-about">
+          <h1 className="text-3xl text-center text-[#4169E1] font-sans ">
+            Yuk Kenalan
+          </h1>
+          <p className="text-[18px] mt-[10px] text-center font-sans">
+            Aplikasi investasi berbasis crowd funding untuk investasi rumah dan
+            bisnis untuk semua orang
+          </p>
+        </div>
+
         <h1 className="mt-10 text-lg font-sans">Mari Mulai Dengan,</h1>
         <h1 className="text-2xl font-sans">Apa Itu Homefunding?</h1>
         <div className="mt-5 flex-wrap md:justify-center font-sans">

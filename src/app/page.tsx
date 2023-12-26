@@ -8,12 +8,18 @@ import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 import { useRef } from 'react';
 
-export default function Home() {
+export default function Home({
+  dataNavbar,
+  dataNavbarMenu,
+}: {
+  dataNavbar: any;
+  dataNavbarMenu: any;
+}) {
   const tawkMessengerRef = useRef();
 
   return (
     <div className="">
-      <Header />
+      <Header dataNavbar={dataNavbar} dataNavbarMenu={dataNavbarMenu} />
       <Feature />
       <Footer />
       <TawkMessengerReact
@@ -24,3 +30,4 @@ export default function Home() {
     </div>
   );
 }
+
