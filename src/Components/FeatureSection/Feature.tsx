@@ -310,7 +310,7 @@ export default function Feature() {
         </div>
         <section>
           <div>
-            <h1 className="mt-10">Penawaran Saat Ini</h1>
+            <h1 className="mt-10 font-semibold">Penawaran Saat Ini</h1>
           </div>
           {/* Catalog */}
           <div className="lg:mx-[112px] lg:mt-[24px]  mx-[40px] mt-[40px]">
@@ -341,7 +341,7 @@ export default function Feature() {
                   </div>
                   <div className="flex gap-4">
                     <div>
-                      <p className="text-xs text-[#777777]">
+                      <p className="text-xs text-[#777777] font-semibold">
                         Minimum Investasi
                       </p>
                       <p className="font-bold text-[#474747]">Rp.100.000</p>
@@ -350,10 +350,10 @@ export default function Feature() {
                       <div className="absolute left-1/2 -ml-0.5 w-0.5 h-[50px] bg-gray-600"></div>
                     </div>
                     <div>
-                      <p className="text-xs text-[#777777]">
-                        Minimum Investasi
+                      <p className="text-xs text-[#777777] font-semibold">
+                        Maximum Investasi
                       </p>
-                      <p className="font-bold text-[#474747]">Rp.100.000</p>
+                      <p className="font-bold text-[#474747]">Rp.1.000.000</p>
                     </div>
                   </div>
                 </div>
@@ -396,7 +396,7 @@ export default function Feature() {
                   </div>
                   <div className="flex gap-4">
                     <div>
-                      <p className="text-xs text-[#777777]">
+                      <p className="text-xs text-[#777777] font-semibold">
                         Minimum Investasi
                       </p>
                       <p className="font-bold text-[#474747]">Rp.100.000</p>
@@ -405,10 +405,10 @@ export default function Feature() {
                       <div className="absolute left-1/2 -ml-0.5 w-0.5 h-[50px] bg-gray-600"></div>
                     </div>
                     <div>
-                      <p className="text-xs text-[#777777]">
-                        Minimum Investasi
+                      <p className="text-xs text-[#777777] font-semibold">
+                        Maximum Investasi
                       </p>
-                      <p className="font-bold text-[#474747]">Rp.100.000</p>
+                      <p className="font-bold text-[#474747]">Rp.1.000.000</p>
                     </div>
                   </div>
                 </div>
