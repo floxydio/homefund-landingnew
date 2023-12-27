@@ -15,6 +15,7 @@ export default function Footer() {
     }
 
     const [modalIsOpen, setIsOpen] = React.useState(false)
+    const [modalIsOpenb, setIsOpenb] = React.useState(false)
 
     function openModal() {
         document.body.style.overflow = 'hidden';
@@ -26,6 +27,17 @@ export default function Footer() {
         document.body.style.overflow = 'scroll'
         setIsOpen(false)
     }
+    function openModalb() {
+        document.body.style.overflow = 'hidden';
+        window.scrollTo({ left: 0, top: document.body.scrollHeight, behavior: "smooth" });
+        setIsOpenb(true)
+    }
+
+    function closeModalb() {
+        document.body.style.overflow = 'scroll'
+        setIsOpenb(false)
+    }
+
     return (
         <>
             <div className="gap-8 py-10 px-5 md:py-16 md:px-28 sm:py-10 sm:px-5 bg-black flex flex-wrap place-content-between">
@@ -33,6 +45,7 @@ export default function Footer() {
                     <img src="/Logo.png" placeholder="img_logo" />
                     <div className="grid gap-3">
                         <div className="text-white flex gap-8">
+                            {/* Modal 1 */}
                             <a href="#" onClick={openModal}>
                                 <p className="hover:cursor-pointer hover:text-blue-400">Syarat & Ketentuan</p></a>
                             <div className="flex justify-center items-center ">
@@ -387,7 +400,126 @@ export default function Footer() {
                                     </div>
                                 </Modal>
                             </div>
-                            <p className="hover:cursor-pointer  hover:text-blue-400">Kebijakan Privasi</p>
+
+                            {/* Modal 2 */}
+                            <a href="#" onClick={openModalb}>
+                                <p className="hover:cursor-pointer  hover:text-blue-400">Kebijakan Privasi</p></a>
+                            <div className="flex justify-center items-center ">
+                                <Modal isOpen={modalIsOpenb} onRequestClose={closeModalb} style={{
+                                    content: {
+                                        width: '50%',
+                                        marginLeft: 'auto',
+                                        marginRight: 'auto',
+                                        marginTop: 30,
+                                        height: '80%',
+                                        overflow: 'scroll'
+                                    },
+                                    overlay: {
+                                        background: '#0000005B',
+                                    }
+                                }} className={" bg-white rounded-lg"}>
+                                    <h2 className=" font-semibold text-xl sticky top-0 bg-white p-3 text-gray-700">Kebijakan Privasi</h2>
+                                    <div className="grid gap-4 text-[#666666] p-3 text-sm">
+                                        <>
+                                            <h5 style={{ fontWeight: 600, fontSize: 20 }}>Gambaran Singkat</h5>
+                                            <p>
+                                                1. {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> berkomitmen untuk menjaga, melindungi dan menghormati kerahasiaan privasi Anda.
+                                            </p>
+                                            <p>2. Anda dapat memberikan informasi mengenai diri Anda secara akurat, benar, dan terkini kepada {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span>.
+                                            </p>
+                                            <p>3. Kebijakan Privasi ini berlaku untuk semua orang dan institusi, baik sebagai investor, developer, pemilik lahan, dan agen pemasaran yang menggunakan Situs ini. Dengan Anda mengakses layanan yang tersedia melalui Situs kami, Anda dengan ini mengakui bahwa Anda telah membaca dan menyetujui seluruh ketentuan kami.
+                                            </p>
+                                            <p>4. Kebijakan Privasi dirancang untuk membantu Anda mengetahui dan memahami bagaimana kami mengumpulkan, menggunakan, dan/atau mengolah Data pribadi yang Anda telah berikan kepada kami, serta membantu Anda dalam mengambil keputusan yang diberitahukan sebelum memberikan Data pribadi Anda kepada kami.
+                                            </p>
+                                            <h5 style={{ fontWeight: 600, fontSize: 20, marginTop: 30 }}>Penggunaan Informasi dan Data Pribadi</h5>
+                                            <p>1. {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> dapat mengumpulkan informasi dan data tentang Anda, baik yang secara langsung diberikan oleh Anda atau dari pihak lain yang diizinkan oleh Anda.
+                                            </p>
+                                            <p>2. Jika kami anggap perlu, data pribadi Anda dapat digunakan dan diungkapkan oleh {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> untuk tujuan berikut ini:
+                                            </p>
+                                            <p style={{ marginLeft: 10 }}>
+                                                a. memberikan akses kepada Anda dan memfasilitasi penggunaan Situs kami dan memastikan bahwa Konten Situs, Produk, Layanan, dan Layanan Interaktif ditampilkan dengan cara yang paling efektif untuk Anda <br style={{ marginBottom: 10 }} />
+                                                b. memberikan kepada Anda informasi, Konten Situs, Produk, Layanan dan Layanan Interaktif yang Anda minta dari kami <br style={{ marginBottom: 10 }} />
+                                                c. memberikan kepada Anda informasi, Konten Situs, Produk, Layanan dan Layanan Interaktif yang Anda minta dari kami <br style={{ marginBottom: 10 }} />
+                                                d. memberikan kepada Anda informasi tentang Produk atau Layanan kepada Anda yang kami rasa mungkin menarik bagi Anda. Apabila Anda telah menjadi Pengguna, kami hanya akan menghubungi Anda melalui email, SMS atau telepon untuk memberikan Informasi tentang Produk dan Layanan yang serupa dengan yang sebelumnya telah Anda pertimbangkan, pendanaan atau manfaatkan <br style={{ marginBottom: 10 }} />
+                                                e. memberitahu kepada Anda tentang perubahan-perubahan di Situs, Konten Situs, Produk, Layanan, Layanan Interaktif <br style={{ marginBottom: 10 }} />
+                                                f. mengelola Situs kami dan untuk pengoperasian internal, termasuk pemecahan masalah (troubleshooting), analisis data, pengujian, penelitian, tujuan statistik dan survei <br style={{ marginBottom: 10 }} />
+                                                g. meningkatkan Situs kami untuk memastikan bahwa Konten Situs, Produk, Layanan, dan Layanan Interaktif disampaikan dengan cara yang paling efektif untuk Anda <br style={{ marginBottom: 10 }} />
+                                                h. membuat saran dan rekomendasi untuk Anda dan Para Pengguna lain Situs kami tentang Produk, Layanan yang mungkin menarik bagi Anda atau mereka <br style={{ marginBottom: 10 }} />
+                                                i. membuat keputusan yang berkaitan dengan pembukaan atau kelanjutan akun pengguna dan pembuatan, penyediaan atau kelanjutan dari layanan dan produk selain itu menjaga akurasi informasi "kenali pelanggan Anda" dan melakukan pemeriksaan anti pencucian uang, kredit dan latar belakang <br style={{ marginBottom: 10 }} />
+                                                j. menyediakan, mengoperasikan, memproses dan mengelola akun pengguna, layanan dan produk atau mengelola aplikasi-aplikasi untuk akun pengguna, layanan dan produk, setiap transaksi (termasuk transaksi pengiriman uang), dan menjaga kualitas layanan dan melatih staf <br style={{ marginBottom: 10 }} />
+                                                k. menyediakan atau memberikan akses kepada materi-materi terkait Produk seperti dokumen penawaran, laporan, profil produk, lembar ketentuan (term sheet) atau materi-materi lain terkait produk <br style={{ marginBottom: 10 }} />
+                                                l. melakukan penilaian risiko, analisis dan perencanaan statistik dan tren, termasuk melaksanakan pengolahan data, analisis statistik, kredit, risiko dan anti pencucian uang, membuat dan mengelola model penilaian kredit, melakukan pemeriksaan dan peninjauan kredit dan latar belakang lain, dan menyimpan sejarah kredit Anda untuk referensi saat ini dan di masa mendatang <br style={{ marginBottom: 10 }} />
+                                                m. memantau dan mencatat panggilan dan komunikasi elektronik dengan Anda untuk tujuan pencatatan, kualitas, pelatihan, investigasi, dan pencegahan penipuan <br style={{ marginBottom: 10 }} />
+                                                n. mendeteksi, mencegah, melakukan penyidikan dan mendakwa kejahatan dan penipuan termasuk membantu dalam setiap penyidikan kejahatan oleh otoritas yang relevan terhadap Anda, individu yang relevan atau orang lain <br style={{ marginBottom: 10 }} />
+                                                o. melakukan menajemen internal untuk mengoperasikan sistem informasi kontrol dan manajemen dan melaksanakan audit internal atau mengizinkan pelaksanaan audit eksternal <br style={{ marginBottom: 10 }} />
+                                                p. mengelola hubungan {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> dengan Anda, yang dapat termasuk menyediakan informasi kepada Anda atau individu yang relevan, tentang produk dan layanan {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span>, apabila secara khusus disetujui atau apabila diizinkan berdasarkan peraturan perundang-undangan yang berlaku <br style={{ marginBottom: 10 }} />
+                                                q. untuk memasarkan produk atau layanan keuangan atau yang terkait dengan investasi melalui berbagai cara komunikasi termasuk surat, telepon, SMS, fax, email, internet, riset pasar, dan merancang atau menyaring produk atau layanan yang serupa termasuk dengan melakukan riset pasar, analisis data, dan survei <br style={{ marginBottom: 10 }} />
+                                                r. mematuhi setiap kewajiban, persyaratan, kebijakan, prosedur, penilaian atau pengaturan untuk berbagi data dan informasi dalam {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> dan penggunaan data dan informasi lainnya sesuai dengan setiap program {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> untuk pemenuhan sanksi atau pencegahan atau pendeteksian pencucian uang, pendanaan teroris atau kegiatan melanggar hukum lainnya.
+                                            </p>
+                                            <p>3. Kami dapat menggabungkan setiap informasi dan data, terlepas dari bagaimana informasi dan data tersebut diberikan kepada kami atau dikumpulkan oleh kami untuk tujuan memberikan kepada Anda produk dan layanan kami.
+                                            </p>
+                                            <p>4. Sebagaimana tujuan dari kami dapat mengumpulkan, menggunakan, mengungkapkan atau mengolah Data pribadi Anda tergantung pada keadaan pada saat itu, tujuan tersebut mungkin tidak muncul dalam poin di atas. Namun, kami akan memberitahu Anda tentang tujuan lain tersebut pada saat meminta persetujuan Anda untuk pengumpulan Data pribadi tersebut, kecuali pengolahan Data pribadi Anda tanpa persetujuan Anda yang diizinkan oleh hukum.
+                                            </p>
+                                            <p>5. Kami juga dapat berbagi Data pribadi dengan Para Pihak Ketiga Yang Dipilih termasuk:
+                                            </p>
+                                            <p style={{ marginLeft: 10 }}>
+                                                a. para mitra usaha, pemasok dan sub-kontraktor untuk pelaksanaan setiap kontrak yang kami adakan dengan mereka atau Anda<br style={{ marginBottom: 10 }} />
+                                                b. para pengiklan dan jaringan-jaringan iklan yang memerlukan data untuk memilih dan menyediakan iklan yang relevan kepada Anda dan orang lain<br style={{ marginBottom: 10 }} />
+                                                c. penyedia analisis dan mesin pencari yang membantu kami dalam peningkatan dan optimalisasi situs kami<br style={{ marginBottom: 10 }} />
+                                                d. calon penjual atau pembeli bisnis atau aset apabila kami menjual atau membeli bisnis atau aset apapun, dalam hal ini kami dapat mengalihkan Data pribadi Anda kepada pembeli atau penjual tersebut sebagai bagian dari transaksi<br style={{ marginBottom: 10 }} />
+                                                e. setiap organisasi atau orang tersebut, jika kami berada di bawah kewajiban untuk mengungkapkan atau membagikan Data pribadi Anda untuk mematuhi setiap kewajiban hukum, atau untuk melaksanakan atau menerapkan Ketentuan-Ketentuan Penggunaan kami, dan perjanjian lainnya, atau untuk melindungi hak, aset, atau keamanan dari {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span>, pelanggan kami, Para Pengguna atau lainnya. Ini termasuk bertukar informasi dengan perusahaan dan organisasi lain untuk tujuan perlindungan dari penipuan dan pengurangan risiko kredit<br style={{ marginBottom: 10 }} />
+                                                f. agen, kontraktor atau penyedia layanan pihak ketiga yang menyediakan administrasi, pengiriman pos, telemarketing, telekomunikasi penjualan langsung, call center, proses bisnis, perjalanan, visa, manajemen pengetahuan, sumber daya manusia, pengolahan data, teknologi informasi, komputer, pembayaran, penagihan utang, referensi kredit atau pemeriksaan-pemeriksaan latar belakang lain atau layanan-layanan lain kepada {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> sehubungan dengan pengoperasian bisnis dari {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span><br style={{ marginBottom: 10 }} />
+                                                f. agen, kontraktor atau penyedia layanan pihak ketiga yang menyediakan administrasi, pengiriman pos, telemarketing, telekomunikasi penjualan langsung, call center, proses bisnis, perjalanan, visa, manajemen pengetahuan, sumber daya manusia, pengolahan data, teknologi informasi, komputer, pembayaran, penagihan utang, referensi kredit atau pemeriksaan-pemeriksaan latar belakang lain atau layanan-layanan lain kepada {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> sehubungan dengan pengoperasian bisnis dari {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span><br style={{ marginBottom: 10 }} />
+                                                g. orang atau entitas yang merupakan bagian dari Grup {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> walaupun hanya sepanjang diperlukan untuk memenuhi Tujuan Yang Diizinkan yang relevan<br style={{ marginBottom: 10 }} />
+                                                h. bank tertarik atau penarik sehubungan dengan setiap cek atau yang setara yang diproses oleh {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> atau<br style={{ marginBottom: 10 }} />
+                                                i. lembaga keuangan yang dengannya Anda memiliki atau mengajukan untuk memiliki urusan terkait dengan setiap Produk dan/atau Layanan<br style={{ marginBottom: 10 }} />
+                                                j. lembaga keuangan, agen proses, atau pihak lain yang akan terlibat dalam transaksi pengiriman uang atau kegiatan perbankan/keuangan apapun<br style={{ marginBottom: 10 }} />
+                                                k. penerima pengalihan yang sebenarnya atau yang diajukan dari {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> atau Grup {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span>, atau peserta atau sub-peserta atau penerima pengalihan hak-hak {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> atau Grup {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> sehubungan dengan Anda atau Individu Yang Relevan lain, semua atau sebagian dari aset atau bisnis dari {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> atau Grup {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span><br style={{ marginBottom: 10 }} />
+                                                l. pihak yang memberikan atau mengajukan untuk memberikan jaminan atau jaminan pihak ketiga kepada penerima jaminan atau menjamin kewajiban-kewajiban Anda atau orang-orang dari Individu Yang Relevan manapun.
+                                            </p>
+                                            <p>
+                                                6. Dalam hal ini, tujuan atas penggunaan dan pengungkapan informasi dan data tentang Anda yang dimaksud berdasarkan tujuan dari kebijakan ini secara kolektif selanjutnya disebut sebagai "Tujuan Yang Diizinkan".
+                                            </p>
+                                            <h5 style={{ fontWeight: 600, fontSize: 20, marginTop: 30 }}>Administrasi dan Pengelolaan Data pribadi Anda </h5>
+                                            <p>1. Kami akan melakukan upaya yang wajar untuk memastikan bahwa Data pribadi Anda akurat dan lengkap, jika data pribadi Anda kemungkinan akan digunakan oleh {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> untuk membuat keputusan yang mempengaruhi Anda, atau mengungkapkan kepada organisasi lain. Namun, ini berarti bahwa Anda harus juga memberitahukan kepada kami setiap perubahan pada data pribadi Anda yang awalnya Anda berikan kepada kami. Kami tidak akan bertanggung jawab untuk mengandalkan data pribadi yang tidak akurat dan tidak lengkap yang diakibatkan karena Anda tidak memberitahukan kepada kami setiap perubahan pada Data pribadi Anda yang awalnya Anda berikan kepada kami.
+                                            </p>
+                                            <p>3. Kami juga akan menempatkan langkah-langkah yang memastikan Data pribadi Anda yang ada di bawah penguasaan atau berada di bawah kendali kami dimusnahkan dan/atau dijadikan bersifat anonim sesegera mungkin saat dianggap wajar untuk mengasumsikan bahwa:
+                                            </p>
+                                            <p style={{ marginLeft: 10 }}>
+                                                (i) tujuan Data pribadi itu dikumpulkan tidak lagi dipenuhi dengan penyimpanan Data pribadi tersebut; dan <br style={{ marginBottom: 10 }} />
+                                                (ii) penyimpanan tidak lagi perlu dilakukan untuk tujuan hukum atau bisnis lain apapun.<br style={{ marginBottom: 10 }} />
+                                            </p>
+                                            <p>4. Apabila Data pribadi Anda akan dipindahkan dari negara manapun di tempat Anda mengakses Situs ini, kami akan mematuhi hukum yang berlaku dalam melakukannya.
+                                            </p>
+                                            <h5 style={{ fontWeight: 600, fontSize: 20, marginTop: 30 }}>Hak Untuk Menolak Penggunaan Data pribadi Untuk Tujuan Pemasaran</h5>
+                                            <p>Anda memiliki hak untuk meminta kami agar tidak mengolah Data pribadi Anda untuk tujuan pemasaran. Kami akan memberitahu Anda dan meminta persetujuan dari Anda sebelum kami menggunakan Data pribadi Anda untuk tujuan tersebut atau jika kami bermaksud mengungkapkan Data pribadi Anda kepada pihak ketiga manapun untuk tujuan tersebut. Anda dapat menggunakan hak Anda untuk menolak pengolahan tersebut dengan cara memberikan tanda pada formulir yang terkait yang kami gunakan untuk mengumpulkan data Anda. Bahkan setelah Anda memberikan persetujuan Anda atas Data pribadi yang akan digunakan untuk tujuan pemasaran, Anda dapat, setiap saat setelah itu, menarik persetujuan Anda dengan menghubungi kami di <u style={{ color: "#308AFF" }}>
+                                                <a href="#">kontrakdana@gmail.com</a></u>
+                                            </p>
+                                            
+                                            <h5 style={{ fontWeight: 600, fontSize: 20, marginTop: 30 }}>Link Ke Situs Lain</h5>
+                                            <p>Situs kami dapat, dari waktu ke waktu, berisi link ke Situs-Situs Pihak Ketiga dan website dari jaringan mitra, pengiklan, afiliasi atau anak perusahaan kami. Jika Anda mengikuti suatu link ke salah satu website tersebut, perlu Anda ketahui bahwa website tersebut dapat memiliki atau tidak memiliki kebijakan privasi mereka sendiri dan bahwa kami tidak menerima tanggung jawab atau kewajiban atas kebijakan-kebijakan ini atau tidak adanya kebijakan-kebijakan ini. Bacalah kebijakan ini sebelum Anda menyerahkan informasi apapun termasuk Data pribadi Anda pada website tersebut.
+                                            </p>
+                                            
+                                            <h5 style={{ fontWeight: 600, fontSize: 20, marginTop: 30 }}>Akses ke Informasi</h5>
+                                            <p>1. Anda memiliki hak untuk meminta kepada kami Data pribadi tentang Anda yang disimpan oleh {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span>. Jika Anda ingin mengakses, memutakhirkan atau mengubah atau menghapus setiap informasi yang Anda berikan kepada kami, hubungi kami di <u style={{ color: "#308AFF" }}>
+                                                <a href="#">kontrakdana@gmail.com</a></u> untuk mendapatkan bantuan.
+                                            </p>
+                                            <p>2. Dalam keadaan-keadaan luar biasa, {" "} <span style={{ fontWeight: 600 }}>HomeFunding</span> dapat menolak akses Anda ke Data pribadi Anda tetapi kami akan memberikan kepada Anda penjelasan tentang alasan yang mencegah kami melakukan hal itu berdasarkan hukum yang berlaku. Keadaan-keadaan luar biasa tersebut termasuk tetapi tidak terbatas pada apabila:
+                                            </p>
+                                            <p style={{ marginLeft: 10 }}>
+                                                a. para mitra usaha, pemasok dan sub-kontraktor untuk pelaksanaan setiap kontrak yang kami adakan dengan mereka atau Anda<br style={{ marginBottom: 10 }} />
+                                                b. para pengiklan dan jaringan-jaringan iklan yang memerlukan data untuk memilih dan menyediakan iklan yang relevan kepada Anda dan orang lain<br style={{ marginBottom: 10 }} />
+                                                c. penyedia analisis dan mesin pencari yang membantu kami dalam peningkatan dan optimalisasi situs kami
+                                            </p>
+                                        </>
+
+                                    </div>
+                                    <div className="border-t-2 font-semibold text-[18px] sticky bottom-0 bg-white p-3 text-white text-base flex justify-end">
+                                        <button className="bg-[#4169E1] px-9 rounded-sm py-1" onClick={closeModalb}>Tutup</button>
+                                    </div>
+                                </Modal>
+                            </div>
+
 
                         </div>
                         {/* <div className="text-white flex gap-3 flex-wrap">
