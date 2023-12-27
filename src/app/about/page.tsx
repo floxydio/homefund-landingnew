@@ -58,10 +58,13 @@ export default function Page() {
           <div className="grid grid-cols-3 gap-3 mr-5 ml-5 pb-10 mb-10">
             {/* Ini Dio Okta */}
             <div className="max-w-sm  overflow-hidden shadow-lg bg-white rounded">
-              <img
+              <Image
                 className="w-full bg-white"
                 src="/Profile/Dio.png"
                 alt="CTO Homefunding"
+                width={100}
+                height={100}
+                unoptimized
               />
               <div className="px-6 py-4 bg-white">
                 <div className="font-bold text-xl mb-2 text-center font-sans">
@@ -75,10 +78,13 @@ export default function Page() {
 
             {/* Ini Juli Huang */}
             <div className="max-w-sm  overflow-hidden shadow-lg bg-white rounded">
-              <img
+              <Image
                 className="w-full bg-white"
                 src="/Profile/Ilung.png"
                 alt="CTO Homefunding"
+                width={100}
+                height={100}
+                unoptimized
               />
               <div className="px-6 py-4 bg-white">
                 <div className="font-bold text-xl mb-2 text-center font-sans">
@@ -92,10 +98,13 @@ export default function Page() {
 
             {/* Ini Blek */}
             <div className="max-w-sm  overflow-hidden shadow-lg bg-white rounded">
-              <img
+              <Image
                 className="w-full bg-white"
                 src="/Profile/Ramanda.png"
                 alt="COO Homefunding"
+                width={100}
+                height={100}
+                unoptimized
               />
               <div className="px-6 py-4 bg-white">
                 <div className="font-bold text-xl mb-2 text-center font-sans">
