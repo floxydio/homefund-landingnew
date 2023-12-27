@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <div className="lg:ml-[112px] lg:mr-[112px] lg:mt-[24px]  ml-[40px] mr-[40px] mt-[40px]">
-        {/* <Navbar /> */}
+        <Navbar />
         <div className="background-header-about">
           <h1 className="text-3xl text-center text-[#4169E1] font-sans ">
             Yuk Kenalan
