@@ -10,10 +10,10 @@ export default function Feature() {
         {/* section heading */}
         <div className="flex justify-center">
           <div className="flex-row space-y-2 max-w-3xl ">
-            <h1 className="text-3xl font-bold text-center text-[#111827]">
+            <h1 className="text-3xl font-bold text-center">
               Servis Andalan Kita
             </h1>
-            <p className="text-center text-[#111827] text-lg">
+            <p className="text-center text-lg">
               Untuk memberikan pengalaman investasi yang baik untuk pengguna
               yang ingin memulai investasi
             </p>
@@ -62,12 +62,12 @@ export default function Feature() {
                   </div>
                   {/* content  */}
                   <div className="justify-center max-w-[352px] min-w-[303px]">
-                    <div className="text-[#111827]">
+                    <div>
                       <h1 className="font-bold text-[30px] text-center ">
                         Murah
                       </h1>
                     </div>
-                    <div className="text-[#374151]  flex flex-row">
+                    <div className="  flex flex-row">
                       <p className="text-center text-[##374151]">
                         Kami menyediakan modal infestasi mulai dari Rp.100.000{' '}
                       </p>
@@ -107,12 +107,12 @@ export default function Feature() {
                   </div>
                   {/* content  */}
                   <div className="justify-center max-w-[352px] min-w-[303px]">
-                    <div className="text-[#111827]">
+                    <div className="">
                       <h1 className="font-bold text-[30px] text-center ">
                         Flexibilitas
                       </h1>
                     </div>
-                    <div className="text-[#374151]  flex flex-row">
+                    <div className=" flex flex-row">
                       <p className="text-center ">
                         Dapat digunakan dimana saja, kapan saja Anda ingin
                         investasi
@@ -153,12 +153,12 @@ export default function Feature() {
                   </div>
                   {/* content  */}
                   <div className="justify-center max-w-[352px] min-w-[303px]">
-                    <div className="text-[#111827]">
+                    <div className="">
                       <h1 className="font-bold text-[30px] text-center ">
                         Bersahabat
                       </h1>
                     </div>
-                    <div className="text-[#374151]  flex flex-row">
+                    <div className="  flex flex-row">
                       <p className="text-center ">
                         Tampilan yang mudah dipahami dan juga interface yang
                         simple
@@ -199,12 +199,12 @@ export default function Feature() {
                   </div>
                   {/* content  */}
                   <div className="justify-center max-w-[352px] min-w-[303px]">
-                    <div className="text-[#111827]">
+                    <div className="">
                       <h1 className="font-bold text-[30px] text-center ">
                         Edukasi
                       </h1>
                     </div>
-                    <div className="text-[#374151]  flex flex-row">
+                    <div className="  flex flex-row">
                       <p className="text-center text-[##374151]">
                         Memberikan edukasi seputar dunia investasi untuk yang
                         baru masuk ke dunia infestasi
@@ -245,12 +245,12 @@ export default function Feature() {
                   </div>
                   {/* content  */}
                   <div className="justify-center max-w-[352px] min-w-[303px]">
-                    <div className="text-[#111827]">
+                    <div className="">
                       <h1 className="font-bold text-[30px] text-center ">
                         Cepat
                       </h1>
                     </div>
-                    <div className="text-[#374151]  flex flex-row">
+                    <div className=" flex flex-row">
                       <p className="text-center ">
                         Pembagian keuntungan yang cepat serta service yang siap
                         membantu Anda 24/7
@@ -292,12 +292,12 @@ export default function Feature() {
                   </div>
                   {/* content  */}
                   <div className="justify-center max-w-[352px] min-w-[303px]">
-                    <div className="text-[#111827]">
+                    <div className="">
                       <h1 className="font-bold text-[30px] text-center ">
                         Aman
                       </h1>
                     </div>
-                    <div className="text-[#374151]  flex flex-row">
+                    <div className="  flex flex-row">
                       <p className="text-center ">
                         Tidak perlu khawatir akan uang hilang atau pun tertahan
                       </p>
@@ -313,18 +313,18 @@ export default function Feature() {
             <h1 className="mt-10 font-semibold">Penawaran Saat Ini</h1>
           </div>
           {/* Catalog */}
-          <div className="lg:mx-[112px] lg:mt-[24px]  mx-[40px] mt-[40px]">
+          <div className="lg:mx-[112px] lg:mt-[24px]  mx-[40px] mt-[40px">
             <div className="grid grid-cols-3 gap-3 mx-5 pb-10 mb-10">
-              <div className="max-w-sm  overflow-hidden shadow-lg bg-white rounded">
+              <div className="max-w-sm  overflow-hidden shadow-lg rounded  dark:bg-slate-800">
                 <Image
-                  className="w-full bg-white"
+                  className="w-full"
                   src={rumahTangerangThumbnail.src}
                   alt="Rumah Tangerang Thumbnail"
                   width={100}
                   height={100}
                   unoptimized
                 />
-                <div className="px-6 py-4 bg-white">
+                <div className="px-6 py-4 dark:bg-slate-800">
                   <div className="mb-4">
                     <div className="text-start font-sans text-lg">
                       Rumah Tangerang
@@ -344,7 +344,7 @@ export default function Feature() {
                       <p className="text-xs text-[#777777] font-semibold">
                         Minimum Investasi
                       </p>
-                      <p className="font-bold text-[#474747]">Rp.100.000</p>
+                      <p className="font-bold ">Rp.100.000</p>
                     </div>
                     <div className="bg-amber-200 relative">
                       <div className="absolute left-1/2 -ml-0.5 w-0.5 h-[50px] bg-gray-600"></div>
@@ -353,7 +353,7 @@ export default function Feature() {
                       <p className="text-xs text-[#777777] font-semibold">
                         Maximum Investasi
                       </p>
-                      <p className="font-bold text-[#474747]">Rp.1.000.000</p>
+                      <p className="font-bold ">Rp.1.000.000</p>
                     </div>
                   </div>
                 </div>
@@ -370,16 +370,16 @@ export default function Feature() {
                   <span className="text-xs ml-20">40%</span>
                 </div>
               </div>
-              <div className="max-w-sm  overflow-hidden shadow-lg bg-white rounded">
+              <div className="max-w-sm  overflow-hidden shadow-lg rounded  dark:bg-slate-950 dark:te">
                 <Image
-                  className="w-full bg-white"
+                  className="w-full dark:bg-slate-950"
                   src={rumahPasarKamisThumbail.src}
                   alt="Rumah Pasar Kamis Thumbnail"
                   width={100}
                   height={100}
                   unoptimized
                 />
-                <div className="px-6 py-4 bg-white">
+                <div className="px-6 py-4  dark:bg-slate-950">
                   <div className="mb-4">
                     <div className="text-start font-sans text-lg">
                       Rumah Tangerang
@@ -389,26 +389,26 @@ export default function Feature() {
                         icon={faLocationDot}
                         style={{ color: '#777777' }}
                       />
-                      <span className="text-sm ml-1 text-[#777777]">
+                      <span className="text-sm ml-1 ">
                         Tangerang, Kabupaten Banten
                       </span>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <div>
-                      <p className="text-xs text-[#777777] font-semibold">
+                      <p className="text-xs  font-semibold">
                         Minimum Investasi
                       </p>
-                      <p className="font-bold text-[#474747]">Rp.100.000</p>
+                      <p className="font-bold ">Rp.100.000</p>
                     </div>
                     <div className="bg-amber-200 relative">
                       <div className="absolute left-1/2 -ml-0.5 w-0.5 h-[50px] bg-gray-600"></div>
                     </div>
                     <div>
-                      <p className="text-xs text-[#777777] font-semibold">
+                      <p className="text-xs  font-semibold">
                         Maximum Investasi
                       </p>
-                      <p className="font-bold text-[#474747]">Rp.1.000.000</p>
+                      <p className="font-bold ">Rp.1.000.000</p>
                     </div>
                   </div>
                 </div>

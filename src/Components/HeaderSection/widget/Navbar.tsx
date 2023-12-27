@@ -20,7 +20,9 @@ export default function Navbar() {
       <div className="hidden lg:block">
         <div className="navbar flex flex-row justify-between items-center mb-[50px]">
           <div className="left flex items-center">
-            <h2 className="text-2xl font-extrabold pr-[32px]">HomeFunding</h2>
+            <Link className="text-2xl font-extrabold pr-[32px]" href="/">
+              HomeFunding
+            </Link>
             <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">
               Fitur
             </span>

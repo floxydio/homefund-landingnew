@@ -11,8 +11,18 @@ import { useRef } from 'react';
 export default function Home() {
   const tawkMessengerRef = useRef();
 
+  if (
+    localStorage.theme === 'dark' ||
+    (!('theme' in localStorage) &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches)
+  ) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+
   return (
-    <div className="">
+    <div>
       <Header />
       <Feature />
       <Footer />
