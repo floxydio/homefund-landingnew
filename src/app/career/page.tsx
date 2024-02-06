@@ -21,7 +21,6 @@ export default function Page() {
                             {/* <div className="bg-[#4169E1] w-[100px] text-white text-center h-[40px] rounded-[8px] flex justify-center items-center">
                             <span className="text-white font-bold">Daftar</span>
                         </div> */}
-
                         </div>
                     </div>
                 </div>
