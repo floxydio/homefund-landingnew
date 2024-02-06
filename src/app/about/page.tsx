@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <>
       <div>
-        <div className='ml-[110px] mr-[110px]'><Navbar /></div>
+        <div className='lg:ml-[110px] lg:mr-[110px]'><Navbar /></div>
         <div>
           <h1 className="text-3xl text-center font-bold mt-[100px]">
             Yuk Kenalan Sebentar dengan <span className="text-[#4169E1]">HomeFunding</span>
@@ -21,48 +21,91 @@ export default function Page() {
           <span className='text-center block text-gray-500 text-xl font-medium mt-[50px] w-3/4 ml-auto mr-auto'>Platform aplikasi untuk memecahkan masalah bagi investor yang ingin berinvestasi di bidang properti tetapi tidak memiliki modal yang besar dan minim pengetahuan tentang pasar properti berbasis teknologi serta kami ingin ikut serta meningkatkan kepercayaan dan meningkatkan minat tentang investasi</span>
         </div>
       </div>
-      <div className='ml-[110px] mr-[110px] mt-[100px]'>
+      <div className='lg:ml-[110px] lg:mr-[110px] mt-[100px] max-[600px]:ml-[20px]'>
         <h1 className='text-3xl font-bold'>Berawal dari masalah</h1>
-        <div className="grid grid-cols-2 grid-rows-2 mb-[100px] mt-[70px]">
-              <div className='flex'>
-                <img src={"/image/loyalty.png"} alt="image" style={{
-                  width: '70px',
-                  height: '70px'
-                }} />
-                <div className='ml-3'>
-                  <h2 className='font-bold text-2xl mb-2'>Modal Investasi yang besar</h2>
-              
-                </div>
-              </div>
-              <div className='flex'>
-                <img src={"/image/wallet.png"} alt="image" style={{
-                  width: '70px',
-                  height: '70px'
-                }} />
-                <div className='ml-3'>
-                  <h2 className='font-bold text-2xl mb-2'>Berkurangnya penjualan properti bank</h2>
-                
-                </div>
-              </div>
-              <div className='flex'>
-                <img src={"/image/forward.png"} alt="image" style={{
-                   width: '70px',
-                   height: '70px'
-                }} />
-                <div className='ml-3'>
-                  <h2 className='font-bold text-2xl mb-2'>Investasi Bodong</h2>
-                </div>
-              </div>
-              <div className='flex mb-[100px]'>
-                <img src={"/image/shield.png"} alt="image" style={{
-                       width: '70px',
-                       height: '70px'
-                }} />
-                <div className='ml-3'>
-                  <h2 className='font-bold text-2xl mb-2'>Minimnya Literasi Investasi Properti</h2>
-                </div>
-              </div>
+        {/* Desktop Version */}
+        <div className="lg:grid grid-cols-2 grid-rows-2 mb-[100px] mt-[70px] sm:hidden max-[600px]:hidden">
+          <div className='flex'>
+            <img src={"/image/loyalty.png"} alt="image" style={{
+              width: '70px',
+              height: '70px'
+            }} />
+            <div className='ml-3'>
+              <h2 className='font-bold text-2xl mb-2'>Modal Investasi yang besar</h2>
+
             </div>
+          </div>
+          <div className='flex'>
+            <img src={"/image/wallet.png"} alt="image" style={{
+              width: '70px',
+              height: '70px'
+            }} />
+            <div className='ml-3'>
+              <h2 className='font-bold text-2xl mb-2'>Berkurangnya penjualan properti bank</h2>
+
+            </div>
+          </div>
+          <div className='flex'>
+            <img src={"/image/forward.png"} alt="image" style={{
+              width: '70px',
+              height: '70px'
+            }} />
+            <div className='ml-3'>
+              <h2 className='font-bold text-2xl mb-2'>Investasi Bodong</h2>
+            </div>
+          </div>
+          <div className='flex mb-[100px]'>
+            <img src={"/image/shield.png"} alt="image" style={{
+              width: '70px',
+              height: '70px'
+            }} />
+            <div className='ml-3'>
+              <h2 className='font-bold text-2xl mb-2'>Minimnya Literasi Investasi Properti</h2>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Version */}
+        <div className="lg:hidden grid max-[600px]:grid-cols-1 gap-10  mb-[100px] mt-[70px]">
+          <div className='flex'>
+            <img src={"/image/loyalty.png"} alt="image" style={{
+              width: '70px',
+              height: '70px'
+            }} />
+            <div className='ml-3'>
+              <h2 className='font-bold text-2xl mb-2'>Modal Investasi yang besar</h2>
+
+            </div>
+          </div>
+          <div className='flex'>
+            <img src={"/image/wallet.png"} alt="image" style={{
+              width: '70px',
+              height: '70px'
+            }} />
+            <div className='ml-3'>
+              <h2 className='font-bold text-2xl mb-2'>Berkurangnya penjualan properti bank</h2>
+
+            </div>
+          </div>
+          <div className='flex'>
+            <img src={"/image/forward.png"} alt="image" style={{
+              width: '70px',
+              height: '70px'
+            }} />
+            <div className='ml-3'>
+              <h2 className='font-bold text-2xl mb-2'>Investasi Bodong</h2>
+            </div>
+          </div>
+          <div className='flex mb-[100px]'>
+            <img src={"/image/shield.png"} alt="image" style={{
+              width: '70px',
+              height: '70px'
+            }} />
+            <div className='ml-3'>
+              <h2 className='font-bold text-2xl mb-2'>Minimnya Literasi Investasi Properti</h2>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="bg-[#4169E1] mt-10 rounded">
         <p className="text-3xl text-center text-white mb-5 font-sans pb-10 pt-10">
@@ -81,12 +124,12 @@ export default function Page() {
                 <span onClick={() => {
                   window.open('https://www.linkedin.com/in/dio-okta-rovelino/', '_blank');
                 }} className='cursor-pointer mt-4'>
-                <FaLinkedin style={{
-                  width: '30px',
-                  height: '30px',
-                  marginRight: 'auto',
-                  marginLeft: 'auto',
-                }}  />
+                  <FaLinkedin style={{
+                    width: '30px',
+                    height: '30px',
+                    marginRight: 'auto',
+                    marginLeft: 'auto',
+                  }} />
                 </span>
               </div>
             </div>
@@ -101,17 +144,17 @@ export default function Page() {
                 <span onClick={() => {
                   window.open('https://www.linkedin.com/in/ilung-juli-806184243/', '_blank');
                 }} className='cursor-pointer mt-4'>
-                <FaLinkedin style={{
-                  width: '30px',
-                  height: '30px',
-                  marginRight: 'auto',
-                  marginLeft: 'auto',
-                }}  />
+                  <FaLinkedin style={{
+                    width: '30px',
+                    height: '30px',
+                    marginRight: 'auto',
+                    marginLeft: 'auto',
+                  }} />
                 </span>
               </div>
             </div>
             <div className="max-w-md  overflow-hidden shadow-lg bg-white rounded">
-              
+
               <div className="px-6 py-4 bg-white">
                 <div className="font-bold text-xl mb-2 text-center font-sans">
                   Ramanda Dio
@@ -122,12 +165,12 @@ export default function Page() {
                 <span onClick={() => {
                   window.open('https://www.linkedin.com/in/ramandadio/', '_blank');
                 }} className='cursor-pointer mt-4'>
-                <FaLinkedin style={{
-                  width: '30px',
-                  height: '30px',
-                  marginRight: 'auto',
-                  marginLeft: 'auto',
-                }}  />
+                  <FaLinkedin style={{
+                    width: '30px',
+                    height: '30px',
+                    marginRight: 'auto',
+                    marginLeft: 'auto',
+                  }} />
                 </span>
               </div>
             </div>
@@ -142,12 +185,12 @@ export default function Page() {
                 <span onClick={() => {
                   window.open('https://www.linkedin.com/in/jefry-pratama-51745860/', '_blank');
                 }} className='cursor-pointer mt-4'>
-                <FaLinkedin style={{
-                  width: '30px',
-                  height: '30px',
-                  marginRight: 'auto',
-                  marginLeft: 'auto',
-                }}  />
+                  <FaLinkedin style={{
+                    width: '30px',
+                    height: '30px',
+                    marginRight: 'auto',
+                    marginLeft: 'auto',
+                  }} />
                 </span>
               </div>
             </div>

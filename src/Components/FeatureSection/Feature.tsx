@@ -14,7 +14,10 @@ export default function Feature() {
               Kenapa Harus <span className='text-white font-bold'>HomeFunding</span>
             </h1>
             {/* Why Home Funding */}
-            <div className="grid grid-cols-2 grid-rows-2 mx-32 mb-[100px]">
+
+
+          {/* Desktop Version */}
+          <div className="lg:grid grid-cols-2 grid-rows-2 mx-32 mb-[100px] sm:hidden max-[600px]:hidden">
               <div className='flex'>
                 <img src={"/image/loyalty.png"} alt="image" style={{
                   width: '70px',
@@ -57,6 +60,49 @@ export default function Feature() {
               </div>
             </div>
 
+            {/* Mobile Version */}
+            <div className="lg:hidden grid max-[600px]:grid-cols-1 gap-10 max-[600px]:mx-10 mb-[100px]">
+              <div className='flex'>
+                <img src={"/image/loyalty.png"} alt="image" style={{
+                  width: '70px',
+                  height: '70px'
+                }} />
+                <div className='ml-3'>
+                  <h2 className='text-white font-bold text-2xl mb-2'>Loyalitas</h2>
+                  <span className='text-white'>Semaking sering dan besar investasinya<br />maka semakin banyak pula keuntungan<br />yang akan anda dapatkan</span>
+                </div>
+              </div>
+              <div className='flex'>
+                <img src={"/image/wallet.png"} alt="image" style={{
+                  width: '70px',
+                  height: '70px'
+                }} />
+                <div className='ml-3'>
+                  <h2 className='text-white font-bold text-2xl mb-2'>Refferal</h2>
+                  <span className='text-white'>Ajak teman sebanyak banyaknya dan<br/>dapatkan untung dari kode REFFERAL</span>
+                </div>
+              </div>
+              <div className='flex'>
+                <img src={"/image/forward.png"} alt="image" style={{
+                   width: '70px',
+                   height: '70px'
+                }} />
+                <div className='ml-3'>
+                  <h2 className='text-white font-bold text-2xl mb-2'>Cepat</h2>
+                  <span className='text-white'>Imbal hasil selama 3-6 bulan</span>
+                </div>
+              </div>
+              <div className='flex mb-[100px]'>
+                <img src={"/image/shield.png"} alt="image" style={{
+                       width: '70px',
+                       height: '70px'
+                }} />
+                <div className='ml-3'>
+                  <h2 className='text-white font-bold text-2xl mb-2'>Akurat</h2>
+                  <span className='text-white'>Kapanpun pengguna bertransaksi lot maka<br/>hasil lot akan selalu terupdate secara realtime</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* Feature */}
@@ -65,7 +111,7 @@ export default function Feature() {
             <h1 className="mt-10 text-3xl font-bold text-center">Penawaran Saat Ini</h1>
           </div>
           {/* Catalog - Desktop Version */}
-          <div className="lg:flex sm:hidden lg:mx-[112px] lg:mt-[120px] mx-[40px] mt-[40px] ml-auto  justify-center">
+          <div className="lg:flex sm:hidden max-[600px]:hidden lg:mx-[112px] lg:mt-[120px] mx-[40px] mt-[40px] ml-auto  justify-center">
             <div className="w-[300px]  overflow-hidden shadow-lg rounded  dark:bg-slate-800">
               <Image
                 className="w-full"
@@ -178,8 +224,8 @@ export default function Feature() {
             </div>
           </div>
 
-          {/* Catalog - Mobile Version */}
-          <div className="lg:hidden sm:flex flex-col mt-[40px]  w-full">
+          {/* Catalog - Mobile Version SM min 640 width*/}
+          <div className="lg:hidden min-[320px] flex-col mt-[40px]  w-full">
             <div className="overflow-hidden shadow-lg rounded ml-[20px] mr-[20px]  dark:bg-slate-800">
               <Image
                 className="w-full"

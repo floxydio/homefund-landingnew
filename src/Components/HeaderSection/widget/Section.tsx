@@ -31,7 +31,7 @@ export default function Section() {
                             <span className="text-white font-bold">Try Beta</span>
                         </div>
                         <div className="ml-[16px] flex items-center">
-                            <div className="hover:cursor-pointer flex flex-row flex justify-center text-center w-[138px] h-[56px] rounded-[8px] items-center">
+                            <div className="hover:cursor-pointer flex-row flex justify-center text-center w-[138px] h-[56px] rounded-[8px] items-center">
                                 <FiPlay className="text-[#4169E1] text-2xl" />
                                 <span className="text-[#4169E1] ml-[8px]">Watch Video</span>
                             </div>
