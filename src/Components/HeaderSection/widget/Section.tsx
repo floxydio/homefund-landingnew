@@ -11,15 +11,10 @@ export default function Section() {
                     </span>
                     <p className="text-[18px] mt-[10px]">HomeFunding adalah aplikasi investasi berbasis crowd funding untuk investasi rumah dan bisnis untuk semua orang dengan start invest yang rendah serta periode imbal hasil yang cepat. Solusi terbaik untuk memulai investasi properti kamu. </p>
                     <div className="mt-[32px] flex flex-row items-center">
-                        <div className="bg-[#4169E1] w-[138px] text-white text-center h-[56px] rounded-[8px] flex justify-center items-center hover:cursor-pointer">
-                            <span className="text-white font-bold">Try Beta</span>
+                        <div className="bg-[#4169E1] w-[150px] text-white text-center h-[56px] rounded-[8px] flex justify-center items-center hover:cursor-pointer">
+                            <span className="text-white font-bold">Download for Beta Version</span>
                         </div>
-                        <div className="ml-[16px] flex items-center">
-                            <div className="hover:cursor-pointer flex flex-row flex justify-center text-center w-[138px] h-[56px] rounded-[8px] items-center">
-                                <FiPlay className="text-[#4169E1] text-2xl" />
-                                <span className="text-[#4169E1] ml-[8px]">Watch Video</span>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
                 <img src="/vector.png" alt="mockup" height={640} className="mr-[40px]" />
