@@ -17,7 +17,7 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'background-header-about': "url('./public/background_about.svg')",
-      },
+      }
     },
   },
   plugins: [require('daisyui')],
