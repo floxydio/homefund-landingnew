@@ -1,31 +1,17 @@
 import { FiAlignCenter } from "react-icons/fi";
-import Link from "next/link";
+import Navbar from "@/Components/HeaderSection/widget/Navbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 export default function Page() {
     return (
         <>
             <>
                 <div className="hidden lg:block">
-                    <div className="navbar flex flex-row justify-between items-center mb-[50px]">
-                        <div className="left flex items-center">
-                            <h2 className="text-2xl font-extrabold pr-[32px]">HomeFunding</h2>
-                            <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Fitur</span>
-                            <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Product</span>
-
-                            <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Blog</span>
-                            <span className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]">Tentang Kami</span>
-                            <Link className="mr-[15px] font-semibold hover:cursor-pointer hover:text-[#4169E1]" href="/career">Karir</Link>
-                        </div>
-                        <div className="right flex flex-row items-center h-full">
-                            {/* Button daftar */}
-                            {/* <div className="bg-[#4169E1] w-[100px] text-white text-center h-[40px] rounded-[8px] flex justify-center items-center">
-                            <span className="text-white font-bold">Daftar</span>
-                        </div> */}
-                        </div>
-                    </div>
+                    <Navbar />
                 </div>
                 {/* Mobile Version */}
-                <div className="lg:hidden">
+                {/* <div className="lg:hidden">
                     <div className="navbar flex flex-row justify-between items-center">
                         <div className="left lg:flex items-center">
                             <h2 className="text-2xl font-bold pr-[32px]">HomeFunding</h2>
@@ -38,7 +24,7 @@ export default function Page() {
                             <FiAlignCenter className="text-2xl hover:cursor-pointer" />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 {/*  */}
             </>
             <>Tertantang untuk menjadi bagian dari terobosan ini?</>
@@ -47,9 +33,22 @@ export default function Page() {
                 <div className="justify-stretch">
                     <button className="mt-5 border border-current rounded-2xl flex w-full">
                         <span className="my-7 mx-5">1</span>
-                        <div className="my-3 flex flex-col space-y-1">
-                            <span className="text-sm text-slate-800 flex">Engineering</span>
+                        <div className="container my-3 flex flex-col space-y-1 h-full">
+                            <span className="text-sm text-sky-400/100 flex">Engineering</span>
                             <span className="flex font-bold text-xl">Backend Developer</span>
+                        </div>
+                        <div className="container my-3 flex flex-col space-y-1">
+                        
+                            <div className="my-4 flex justify-center">
+                                <FontAwesomeIcon icon={faBriefcase} className="h-5 w-5 mr-2"/>
+                                Full Time
+                                </div>
+                        </div>
+                        <div className="container my-3 flex flex-col space-y-1">
+                            <div className="my-4 flex justify-center">
+                            <FontAwesomeIcon icon={faLocationDot} className="h-5 w-5 mr-2"/>
+                            Jakarta
+                            </div>
                         </div>
                     </button>
                 </div>
