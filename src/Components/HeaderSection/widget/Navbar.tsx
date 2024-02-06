@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link';
 import { FiAlignCenter, FiPlay } from 'react-icons/fi';
 import { RxCross2 } from "react-icons/rx";
